@@ -34,8 +34,7 @@ public class Main {
 
         try {
             // Send the request to the API, and get a response
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());;
             // If there's an issue, check that response.statusCode() returns a 200
 
             return response.body();
